@@ -19,4 +19,4 @@ var f = Container(
 );
 
 // ---------- Image.networkの例 ----------
-var f = Image.network("<Your Image URL here>");
+var g = Image.network("<Your Image URL here>");
