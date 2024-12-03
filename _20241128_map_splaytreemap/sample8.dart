@@ -16,8 +16,9 @@ int mapTest() {
   SplayTreeMap<int, int> spMap = SplayTreeMap<int, int>();
   Random random = Random();
 
-  // [0,num)にランダムな値を用意
-  for (int i = 0; i < num; ++i) spMap[i] = random.nextInt(num);
+  // [0,num)をランダムな順番に挿入
+  List<int> shuffled = List.generate(num, (index) => index)..shuffle();
+  for (int i = 0; i < num; ++i) spMap[shuffled[i]] = i;
 
   // 時間計測開始
   Stopwatch stopwatch = Stopwatch()..start();
