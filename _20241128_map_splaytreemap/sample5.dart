@@ -24,7 +24,8 @@ int mapTest() {
   // [0,num)の範囲で100万回ランダムアクセス
   for (int i = 0; i < num; i++) {
     int key = random.nextInt(num);
-    int? value = map[key];
+    // int? value = map[key];
+    map[key];
   }
 
   // 時間計測終了

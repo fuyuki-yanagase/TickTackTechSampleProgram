@@ -1,5 +1,5 @@
 import "dart:collection";
-import "dart:math";
+// import "dart:math";
 
 void main() {
   List<int> result = [];
@@ -14,7 +14,7 @@ int mapTest() {
 
   // Mapと乱数の初期化
   SplayTreeMap<int, int> spMap = SplayTreeMap<int, int>();
-  Random random = Random();
+  // Random random = Random();
 
   // [0,num)をランダムな順番に挿入
   List<int> shuffled = List.generate(num, (index) => index)..shuffle();
@@ -25,7 +25,8 @@ int mapTest() {
 
   // keyの昇順にイテレーション
   spMap.forEach((key, value) {
-    int value2 = value;
+    // int value2 = value;
+    value;
   });
 
   // 時間計測終了
